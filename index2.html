@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background-image: url('img/bg-awal-tema-001.webp');
+        background-size: cover;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Mengisi seluruh tinggi viewport */
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        background-position: center, center;
+        flex-direction: column; /* Tambahkan baris ini */
+      }
+
+      .lingkaran-lonjong {
+        width: 430px;
+        height: 284px;
+        border-radius: 45%;
+        background-color: #3498db;
+        transform: scaleX(0.5);
+        margin-top: -50px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Menambahkan shadow */
+        background-image: url('img/Mini-1-scaled-1-1.jpg'); /* Gantikan dengan path gambar Anda */
+        background-size: 100% 100%; /* Agar gambar diisi dengan baik */
+        background-position: center; /* Agar gambar tetap di tengah */
+      }
+
+      .vektor-bunga {
+        width: 200px;
+        height: 150px;
+      }
+
+      .lamanUtama p {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 0px;
+      }
+
+      .lamanUtama {
+        text-align: center;
+        color: white;
+        margin-top: 146px; /* Mengurangi margin-top dari 50px menjadi 30px */
+      }
+
+      .name,
+      .information {
+        margin-top: 10px; /* Menambahkan margin-top untuk mendekatkan kedua elemen */
+      }
+
+      .lamanUtama h1 {
+        font-size: 36px; /* Sesuaikan dengan kebutuhan Anda */
+        color: #121f38;
+      }
+
+      .lamanUtama p {
+        font-size: 13px; /* Sesuaikan dengan kebutuhan Anda */
+        margin-top: 10px; /* Sesuaikan dengan kebutuhan Anda */
+        margin-bottom: 10px; /* Tambahkan margin bawah untuk memberi ruang di bawah teks "THE WEDDING OF" */
+      }
+      .information {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 160px;
+      }
+
+      .info-item {
+        text-align: center;
+        margin: 0 10px;
+        opacity: inherit;
+        padding: 6px; /* Atur padding sesuai kebutuhan Anda */
+        border-radius: 10px; /* Atur radius sudut latar belakang sesuai kebutuhan Anda */
+        /* Atur jarak horizontal di sini sesuai kebutuhan Anda */
+      }
+
+      .info-item h6 {
+        background-color: #113468; /* Warna latar belakang */
+        border-radius: 30%; /* Membuat latar belakang berbentuk lingkaran */
+        width: 80px; /* Atur lebar elemen sesuai kebutuhan Anda */
+        height: 80px; /* Atur tinggi elemen sesuai kebutuhan Anda */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; /* Membuat elemen berada di tengah secara horizontal */
+        color: white; /* Warna teks */
+        font-size: 30px; /* Ukuran teks */
+      }
+
+      .lamanUtama .info-item p {
+        color: black;
+        font-size: 12px;
+        overflow: hidden;
+        /* Menghindari teks terlihat saat awalnya */
+        white-space: nowrap;
+        /* Teks akan tidak wrap ke baris baru */
+        animation: typing 3s steps(40, end);
+        /* Animasi typing selama 3 detik */
+      }
+      .info-item h6 {
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .saveButton {
+        padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan Anda */
+        font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+        background-color: #113468; /* Warna latar belakang tombol */
+        color: white; /* Warna teks tombol */
+        border: none; /* Hilangkan border tombol */
+        border-radius: 30px; /* Tambahkan radius sudut untuk tombol */
+        cursor: pointer; /* Ubah kursor saat mengarah ke tombol */
+        transition: background-color 0.3s; /* Animasi saat hover */
+      }
+
+      .saveButton:hover {
+        background-color: #3060a8; /* Ubah warna latar belakang saat tombol dihover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lamanUtama">
+      <p>THE WEDDING OF</p>
+      <div class="container">
+        <div class="lingkaran-lonjong"></div>
+        <div class="name">
+          <h1 style="font-family: 'Playball', cursive">Adiba & Habib</h1>
+          <p style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+            Kami Berharap Anda Menjadi Bagian Dari Hari Istimewa Kami!
+          </p>
+        </div>
+        <div class="information">
+          <div class="info-item">
+            <h6>50+</h6>
+            <p>Hari</p>
+          </div>
+          <div class="info-item">
+            <h6>100+</h6>
+            <p>Jam</p>
+          </div>
+          <div class="info-item">
+            <h6>700+</h6>
+            <p>Menit</p>
+          </div>
+        </div>
+        <p style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Rabu, 27 Desember 2023</p>
+        <button class="saveButton">Save to Date</button>
+      </div>
+    </div>
+    <div class="biografiPengantin"></div>
+    <div class="loveStory"></div>
+    <div class="saveTheDate"></div>
+    <div class="liveStreaming"></div>
+    <div class="amplopDigital"></div>
+    <div class="galleryPhoto"></div>
+    <div class="ucapanSesuatu"></div>
+    <div class="penutup"></div>
+  </body>
+</html>
