@@ -18,6 +18,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&family=Tangerine&display=swap"
     rel="stylesheet">
+
   <style>
     body {
       margin: 0px;
@@ -325,6 +326,148 @@
       font-size: 24px;
       /* Ukuran ikon */
     }
+
+    .loveStory {
+      /* background-image: url(img/BG-Profile-TEMA-01.webp); */
+      background-size: 100%;
+      /* Meratakan tengah gambar latar belakang */
+      background-repeat: no-repeat;
+      background-position: center 21%;
+      /* Posisi gambar latar belakang di tengah */
+      position: relative;
+      /* Tambahkan ini untuk mengatur posisi relatif */
+    }
+
+    .loveIcon {
+      position: absolute;
+      /* Mengatur posisi absolut */
+      top: 25%;
+      /* Mengatur posisi vertikal ke tengah */
+      left: 30px;
+      /* Mengatur posisi horizontal ke batas kiri loveStory */
+      transform: translateY(-50%);
+      /* Menyesuaikan posisi vertikal */
+    }
+
+    .loveIcon::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      height: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      background-color: #113468;
+      /* Warna latar belakang lingkaran */
+      border-radius: 50%;
+      /* Membuat lingkaran */
+      z-index: -1;
+      /* Menempatkan lingkaran di belakang ikon */
+    }
+
+    .loveIconPernikahan {
+      position: absolute;
+      /* Mengatur posisi absolut */
+      top: 5%;
+      /* Mengatur posisi vertikal ke tengah */
+      left: 30px;
+      /* Mengatur posisi horizontal ke batas kiri loveStory */
+      transform: translateY(-50%);
+      /* Menyesuaikan posisi vertikal */
+    }
+
+    .loveIconPernikahan::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      height: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      background-color: #113468;
+      /* Warna latar belakang lingkaran */
+      border-radius: 50%;
+      /* Membuat lingkaran */
+      z-index: -1;
+      /* Menempatkan lingkaran di belakang ikon */
+    }
+
+    .loveStoryContent {
+      background-color: #fff9ed;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: slideIn 0.5s forwards;
+      /* Tambahkan properti width dan height */
+      width: 300px;
+      /* atau ukuran yang Anda inginkan */
+      height: auto;
+      /* atau ukuran yang Anda inginkan, misalnya 300px atau lainnya */
+      /* Geser ke kanan */
+      margin-left: 76px;
+      margin-top: 34px;
+
+      /* Tambahkan properti border left */
+      border-left: 2px solid #3060a8;
+      /* Ganti dengan warna yang diinginkan */
+      display: flex;
+      /* Menetapkan tata letak flexbox */
+      align-items: center;
+      /* Menyelaraskan elemen secara vertikal */
+      padding-left: 40px;
+      /* Menambahkan padding kiri untuk memberi ruang bagi ikon love */
+    }
+
+    .loveStoryContent i.bi-heart-fill {
+      margin-right: 10px;
+      /* Jarak antara ikon love dan teks */
+    }
+
+    .loveStoryContent h2 {
+      color: #113468;
+      font-size: 18px;
+      /* Ukuran font judul */
+      margin-bottom: 12px;
+      /* Ruang di bawah judul */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .loveStoryContent p {
+      font-size: 16px;
+      /* Ukuran font konten */
+      line-height: 1.6;
+      /* Spasi antar baris */
+    }
+
+    /* CSS untuk mengatur ukuran gambar */
+    img {
+      max-width: 238px;
+      /* Lebar maksimum gambar */
+      height: auto;
+      /* Biarkan tinggi mengikuti proporsi aslinya */
+      display: block;
+      /* Membuat gambar menjadi blok agar bisa mengatur margin secara vertikal */
+      margin: 0 auto;
+      /* Pusatkan gambar dengan margin otomatis */
+    }
+
+    /* CSS untuk mengatur ukuran gambar sesuai dengan lebar border lovestorycontent */
+    .lovestorycontent img {
+      width: 100%;
+      /* Ukuran lebar gambar akan 100% dari lebar parent (lovestorycontent) */
+      height: auto;
+      /* Biarkan tinggi mengikuti proporsi aslinya */
+      display: block;
+      /* Membuat gambar menjadi blok agar bisa mengatur margin secara vertikal */
+      max-width: 100%;
+      /* Lebar maksimum gambar akan 100% dari lebar parent */
+      border-radius: 10px;
+      /* Contoh untuk memberikan border radius pada gambar jika diperlukan */
+    }
   </style>
 </head>
 
@@ -413,7 +556,40 @@
     </div>
   </div>
 
-  <div class="loveStory"></div>
+  <div class="loveStory">
+    <p style="font-family: 'Tangerine', cursive; font-size: 48px; margin-bottom: 4px; text-align: center;">Love Story
+    </p>
+    <div class="loveIcon">
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+    </div>
+    <div class="loveStoryContent">
+      <div class="loveContent">
+        <h2>Awal Cerita</h2>
+        <img src="img/berdua.jpg" alt="Deskripsi Gambar">
+        <p>
+          Berawal dari teman kuliah bersama-sama memperjuangkan S1 Teknik Sipil, bertemu pada tahun 2016 hingga selalu
+          bertemu untuk sesekali makan bersama, lalu menjalin hubungan pacaran 11-11-2017.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="loveStory">
+    <div class="loveIconPernikahan">
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+    </div>
+    <div class="loveStoryContent">
+      <div class="loveContent">
+        <h2>Pernikahan</h2>
+        <img src="img/pernikahan.jpg" alt="Deskripsi Gambar">
+        <p>
+          Pada tanggal 23-03-2019 kami mengikat diri pada pertunangan dan pada tanggal 29-10-2020 kami pun mengadakan
+          akad nikah. Alhamdulillah perjalanan ini sampai pada akhirnya,
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="saveTheDate"></div>
   <div class="liveStreaming"></div>
   <div class="amplopDigital"></div>
