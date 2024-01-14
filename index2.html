@@ -396,6 +396,35 @@
       /* Menempatkan lingkaran di belakang ikon */
     }
 
+    .loveIconResepsi {
+      position: absolute;
+      /* Mengatur posisi absolut */
+      top: 5%;
+      /* Mengatur posisi vertikal ke tengah */
+      left: 30px;
+      /* Mengatur posisi horizontal ke batas kiri loveStory */
+      transform: translateY(-50%);
+      /* Menyesuaikan posisi vertikal */
+    }
+
+    .loveIconResepsi::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      height: 44px;
+      /* Sesuaikan ukuran lingkaran sesuai kebutuhan Anda */
+      background-color: #113468;
+      /* Warna latar belakang lingkaran */
+      border-radius: 50%;
+      /* Membuat lingkaran */
+      z-index: -1;
+      /* Menempatkan lingkaran di belakang ikon */
+    }
+
     .loveStoryContent {
       background-color: #fff9ed;
       padding: 20px;
@@ -585,6 +614,21 @@
         <p>
           Pada tanggal 23-03-2019 kami mengikat diri pada pertunangan dan pada tanggal 29-10-2020 kami pun mengadakan
           akad nikah. Alhamdulillah perjalanan ini sampai pada akhirnya,
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="loveStory">
+    <div class="loveIconResepsi">
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+    </div>
+    <div class="loveStoryContent">
+      <div class="loveContent">
+        <h2>Resepsi Pernikahan</h2>
+        <img src="img/resepsi.jpg" alt="Deskripsi Gambar">
+        <p>
+          Kami bisa melakukan acara resepsi yang insyAllah diadakan pada Minggu, 05 Juni 2022.
         </p>
       </div>
     </div>
