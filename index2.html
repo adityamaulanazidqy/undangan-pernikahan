@@ -13,11 +13,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playball&family=Tangerine&display=swap" rel="stylesheet" />
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&family=Tangerine&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -497,6 +499,206 @@
       border-radius: 10px;
       /* Contoh untuk memberikan border radius pada gambar jika diperlukan */
     }
+
+    .saveTheDate {
+      position: relative;
+      margin-top: 60px;
+      background-image: url('img/berdua.jpg');
+      background-size: 150%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 88px;
+      text-align: center;
+      color: white;
+    }
+
+    .saveTheDate h1 {
+      position: relative;
+      z-index: 2;
+      font-family: 'Tangerine', cursive;
+      font-size: 46px;
+      color: white;
+      opacity: 100%;
+    }
+
+    .saveTheDate p {
+      font-size: 12px;
+      position: relative;
+      color: white;
+      z-index: 2;
+    }
+
+    .saveTheDate .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #113468;
+      opacity: 0.5;
+      z-index: 1;
+      /* Keep the cover div behind the heading */
+    }
+
+    .lihatLokasi {
+      background-image: url('img/bgLihatLokasi.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      /* Tambahkan properti position untuk membuat posisi:relative */
+      height: 100vh;
+    }
+
+    .lihatLokasi .infoAkadNikah {
+      z-index: 2;
+      background-image: url('img/bg-awal-tema-001.webp');
+      background-position-y: center;
+      margin-top: -324px;
+      position: absolute;
+      top: 50%;
+      /* Membuat posisi vertikal di tengah */
+      left: 50%;
+      /* Membuat posisi horizontal di tengah */
+      transform: translate(-50%, -50%);
+      /* Menggeser posisi agar rata tengah */
+      background-color: #ffffff;
+      /* Warna latar belakang dengan opasitas */
+      padding: 4px;
+      /* Ganti nilai padding sesuai kebutuhan Anda */
+      border-radius: 10px;
+      /* Membuat sudut border menjadi bundar */
+      text-align: center;
+      /* Ratakan teks ke tengah */
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      /* Menambahkan shadow */
+      width: 88%;
+    }
+
+    .lihatLokasi .infoAkadNikah h1 {
+      color: #daab7f;
+      font-size: 56px;
+      font-family: 'Tangerine', cursive;
+      padding-top: 14px;
+    }
+
+    .lihatLokasi .infoResepsi {
+      padding-top: 30px;
+      z-index: 3;
+      background-image: url('img/bg-awal-tema-001.webp');
+      background-position-y: center;
+      margin-top: -16%;
+      position: absolute;
+      top: 50%;
+      /* Membuat posisi vertikal di tengah */
+      left: 50%;
+      /* Membuat posisi horizontal di tengah */
+      transform: translate(-50%, -50%);
+      /* Menggeser posisi agar rata tengah */
+      background-color: #ffffff;
+      /* Warna latar belakang dengan opasitas */
+      padding: 4px;
+      /* Ganti nilai padding sesuai kebutuhan Anda */
+      border-radius: 10px;
+      /* Membuat sudut border menjadi bundar */
+      text-align: center;
+      /* Ratakan teks ke tengah */
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      /* Menambahkan shadow */
+      width: 88%;
+    }
+
+    .lihatLokasi .infoResepsi h1 {
+      color: #daab7f;
+      font-size: 56px;
+      font-family: 'Tangerine', cursive;
+      padding-top: 14px;
+    }
+
+    .lihatLokasi button {
+      /* Gaya umum untuk tombol */
+      transform: translate(110%, -50%);
+      position: relative;
+      top: 486px;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: transparent;
+      background-image: linear-gradient(180deg, #5879aa 0%, #113468 100%);
+      /* Warna latar belakang */
+      color: #fff;
+      /* Warna teks */
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      /* Efek transisi untuk latar belakang dan transformasi tombol */
+    }
+
+    .lihatLokasi button:hover {
+      background-color: #45a049;
+      /* Warna latar belakang saat dihover */
+    }
+
+    .lihatLokasi button-container {
+      margin-top: 20px;
+      /* Jarak ke atas dari elemen sebelumnya */
+    }
+
+    .liveStreaming {
+      background-image: url(img/TEMA-01-NEW-live-bawah.jpg);
+      display: flex;
+      height: 100vh;
+      clear: both;
+      align-content: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .liveStreaming .content {
+      margin-top: 22px;
+    }
+
+    .liveStreaming .content h1 {
+      text-align: center;
+      color: white;
+      font-size: 56px;
+      font-family: 'Tangerine', cursive;
+      padding-top: 14px;
+    }
+
+    .liveStreaming .content p {
+      color: white;
+      text-align: center;
+    }
+
+    .liveStreaming button {
+      transform: translate(80%, -50%);
+      position: relative;
+      top: 34px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: white;
+      color: #113468;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+    .liveStreaming button:hover {
+      background-color: #406eb3;
+      color: #fff;
+    }
+
+    .liveStreaming button-container {
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -541,8 +743,8 @@
         pernikahan kami:</p>
     </div>
     <div class="lingkaranLaki"></div>
-    <p style="font-family: 'Tangerine', cursive; font-size: 48px; margin-bottom: 4px; margin-top: 20px">Habib
-      Yulianto</p>
+    <p style="font-family: 'Tangerine', cursive; font-size: 48px; margin-bottom: 4px; margin-top: 20px">Habib Yulianto
+    </p>
     <p
       style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 14px; text-align: center">
       Putra Pertama Bapak Habib <br />& Ibu Adiba
@@ -553,13 +755,13 @@
     <!-- Tombol menuju media sosial -->
     <div class="mediaSosial">
       <a href="https://www.facebook.com/link_anda" target="_blank">
-        <i class="bi bi-facebook" style="font-size: 30px;"></i>
+        <i class="bi bi-facebook" style="font-size: 30px"></i>
       </a>
       <a href="https://www.instagram.com/link_anda" target="_blank" style="margin-left: 10px">
-        <i class="bi bi-instagram" style="font-size: 30px;"></i>
+        <i class="bi bi-instagram" style="font-size: 30px"></i>
       </a>
     </div>
-    <h1 style="font-family: 'Great Vibes', cursive;font-size: 36px; margin-top: 40px;">&</h1>
+    <h1 style="font-family: 'Great Vibes', cursive; font-size: 36px; margin-top: 40px">&</h1>
   </div>
 
   <!-- Bio Perempuan -->
@@ -577,69 +779,115 @@
     <!-- Tombol menuju media sosial -->
     <div class="mediaSosial">
       <a href="https://www.facebook.com/link_anda" target="_blank">
-        <i class="bi bi-facebook" style="font-size: 30px;"></i>
+        <i class="bi bi-facebook" style="font-size: 30px"></i>
       </a>
       <a href="https://www.instagram.com/link_anda" target="_blank" style="margin-left: 10px">
-        <i class="bi bi-instagram" style="font-size: 30px;"></i>
+        <i class="bi bi-instagram" style="font-size: 30px"></i>
       </a>
     </div>
   </div>
 
   <div class="loveStory">
-    <p style="font-family: 'Tangerine', cursive; font-size: 48px; margin-bottom: 4px; text-align: center;">Love Story
-    </p>
+    <p style="font-family: 'Tangerine', cursive; font-size: 48px; margin-bottom: 4px; text-align: center">Love Story</p>
     <div class="loveIcon">
-      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white"></i>
     </div>
     <div class="loveStoryContent">
       <div class="loveContent">
         <h2>Awal Cerita</h2>
-        <img src="img/berdua.jpg" alt="Deskripsi Gambar">
-        <p>
-          Berawal dari teman kuliah bersama-sama memperjuangkan S1 Teknik Sipil, bertemu pada tahun 2016 hingga selalu
-          bertemu untuk sesekali makan bersama, lalu menjalin hubungan pacaran 11-11-2017.
-        </p>
+        <img src="img/berdua.jpg" alt="Deskripsi Gambar" />
+        <p>Berawal dari teman kuliah bersama-sama memperjuangkan S1 Teknik Sipil, bertemu pada tahun 2016 hingga selalu
+          bertemu untuk sesekali makan bersama, lalu menjalin hubungan pacaran 11-11-2017.</p>
       </div>
     </div>
   </div>
 
   <div class="loveStory">
     <div class="loveIconPernikahan">
-      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white"></i>
     </div>
     <div class="loveStoryContent">
       <div class="loveContent">
         <h2>Pernikahan</h2>
-        <img src="img/pernikahan.jpg" alt="Deskripsi Gambar">
-        <p>
-          Pada tanggal 23-03-2019 kami mengikat diri pada pertunangan dan pada tanggal 29-10-2020 kami pun mengadakan
-          akad nikah. Alhamdulillah perjalanan ini sampai pada akhirnya,
-        </p>
+        <img src="img/pernikahan.jpg" alt="Deskripsi Gambar" />
+        <p>Pada tanggal 23-03-2019 kami mengikat diri pada pertunangan dan pada tanggal 29-10-2020 kami pun mengadakan
+          akad nikah. Alhamdulillah perjalanan ini sampai pada akhirnya,</p>
       </div>
     </div>
   </div>
 
   <div class="loveStory">
     <div class="loveIconResepsi">
-      <i class="bi bi-heart-fill" style="font-size: 20px; color: white;"></i>
+      <i class="bi bi-heart-fill" style="font-size: 20px; color: white"></i>
     </div>
     <div class="loveStoryContent">
       <div class="loveContent">
         <h2>Resepsi Pernikahan</h2>
-        <img src="img/resepsi.jpg" alt="Deskripsi Gambar">
-        <p>
-          Kami bisa melakukan acara resepsi yang insyAllah diadakan pada Minggu, 05 Juni 2022.
-        </p>
+        <img src="img/resepsi.jpg" alt="Deskripsi Gambar" />
+        <p>Kami bisa melakukan acara resepsi yang insyAllah diadakan pada Minggu, 05 Juni 2022.</p>
       </div>
     </div>
   </div>
 
-  <div class="saveTheDate"></div>
-  <div class="liveStreaming"></div>
+  <div class="saveTheDate">
+    <h1>Save The Date</h1>
+    <p>"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah).“</p>
+    <p>(QS. Az Zariyat: 49)</p>
+    <div class="cover"></div>
+    <!-- Tambahkan div baru untuk menutupi -->
+  </div>
+  <div class="lihatLokasi">
+    <div class="infoAkadNikah">
+      <!-- Informasi akad nikah -->
+      <h1>Akad Nikah</h1>
+      <p style="font-weight: 500; font-style: italic">Kamis, 09 September 2023</p>
+      <p style="font-style: italic; font-weight: 360">Pukul 10.00 WIB</p>
+      <p style="font-style: italic; font-weight: 360">Alamat : Sumberejo Rt.05 Rw.01 Sidoarjo</p>
+    </div>
+
+    <div class="infoResepsi">
+      <!-- Informasi akad nikah -->
+      <h1>Resepsi</h1>
+      <p style="font-weight: 500; font-style: italic">Kamis, 09 September 2023</p>
+      <p style="font-style: italic; font-weight: 360">Pukul 10.00 WIB</p>
+      <p style="font-style: italic; font-weight: 360">Alamat : Sumberejo Rt.05 Rw.01 Sidoarjo</p>
+    </div>
+
+    <div class="button-container">
+      <!-- Tombol Lihat Lokasi dengan Ikon Bootstrap -->
+      <button id="lihatLokasiButton" onclick="lihatLokasi()"><span class="bi bi-map"></span> Lihat Lokasi</button>
+    </div>
+  </div>
+  <div class="liveStreaming">
+    <div class="content">
+      <h1>Live Streaming</h1>
+      <p style="font-weight: 360; font-style: italic">Kami mengundang Bapak/Ibu/Saudara/i untuk menyaksikan Pernikahan
+        kami secara Virtual yang disiarkan langsung
+        melalui Sosial Media di bawah ini</p>
+      <p style="font-style: italic; font-weight: 360">Tanggal : Minggu, 28 Juli 2024 - Pukul : 09.00 WIB</p>
+      <button class="saveButton">Save to Date</button>
+      <h1 style="margin-top: 20px;">Amplop Digital</h1>
+      <p style="font-style: italic; font-weight: 360">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
+      </p>
+      <p style="font-style: italic; font-weight: 360">Dan jika memberi adalah ungkapan tanda kasih
+        Anda, Anda dapat memberi kado secara cashless.</p>
+      <button class="saveButton">Save to Date</button>
+    </div>
+  </div>
   <div class="amplopDigital"></div>
   <div class="galleryPhoto"></div>
   <div class="ucapanSesuatu"></div>
   <div class="penutup"></div>
+  <script>
+    // Fungsi untuk menangani klik tombol "Lihat Lokasi"
+    function lihatLokasi() {
+      // Gantilah URL_Lokasi dengan URL yang sesuai dengan lokasi Anda
+      var lokasiURL = 'URL_Lokasi';
+
+      // Buka lokasi dalam tab atau jendela baru
+      window.open(lokasiURL, '_blank');
+    }
+  </script>
 </body>
 
 </html>
