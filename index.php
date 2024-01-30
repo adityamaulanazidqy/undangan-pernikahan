@@ -20,6 +20,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playball&family=Tangerine&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     /* Formulir Tamu */
     #guestForm {
@@ -76,7 +77,7 @@
 
     /* Gaya Umum */
     .ucapanSesuatu {
-      padding-bottom: 100%;
+      padding-bottom: 8%;
       background-size: cover;
       background-image: url(img/TEMA-01-NEW-live-atas.jpg);
     }
@@ -346,6 +347,41 @@
       border-top-width: 0px;
       border-right-width: 0px;
     }
+
+    .popup-container {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background-color: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #aaa;
+    }
+
+    .close:hover {
+      color: #000;
+    }
   </style>
 </head>
 
@@ -552,7 +588,7 @@
     <h1>Ucapan Sesuatu</h1>
     <p style="color: white; text-align:center;">Berikan Ucapan & Doa Restu</p>
 
-    <form id="guestForm" method="POST" action="php/simpanData.php">
+    <form id="guestForm" method="POST" action="index.php">
       <input type="text" id="nama" name="nama" placeholder="Nama"><br>
 
       <textarea id="ucapan" name="ucapan" placeholder="Ucapan"></textarea><br>
@@ -575,6 +611,38 @@
       // Koneksi ke database
       include_once 'php/koneksi.php';
 
+      // Periksa apakah ada data yang dikirim melalui metode POST
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Ambil nilai yang dikirimkan melalui formulir
+        $nama = $_POST['nama'];
+        $ucapan = $_POST['ucapan'];
+        $konfirmasi = $_POST['konfirmasi'];
+        $pembuatan = $_POST['tanggalPembuatan'];
+
+        // Persiapkan query untuk menyimpan data tamu
+        $query = "INSERT INTO tamu (nama, ucapan, konfirmasi, tanggal_Pembuatan) VALUES ('$nama', '$ucapan', '$konfirmasi', '$pembuatan')";
+
+        // Eksekusi query untuk menyimpan data
+        if (mysqli_query($koneksi, $query)) {
+      ?>
+          <script>
+            Swal.fire({
+              icon: "success",
+              title: "Sukses Meyimpan Ucapan",
+              text: "Terima kasih atas ucapannya!",
+              // footer: '<a href="#">Terima kasih atas ucapannya!</a>'
+            });
+          </script>
+      <?php
+          // echo "Data tamu berhasil disimpan.";
+        } else {
+          echo "Error: " . $query . "<br>" . mysqli_error($koneksi);
+        }
+
+        // Tutup koneksi database
+      }
+
+
       // Query untuk mengambil data tamu
       $query = "SELECT nama, ucapan, konfirmasi, tanggal_pembuatan FROM tamu";
 
@@ -586,6 +654,8 @@
         echo "Error: " . $query . "<br>" . mysqli_error($koneksi);
         exit();
       }
+
+
 
       $nomor = 1;
 
